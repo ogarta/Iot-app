@@ -52,18 +52,24 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 txtReview.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                txtShow.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                runRGB(Float.toString(sldR.getValue()),Float.toString(sldB.getValue()),Float.toString(sldG.getValue()),Float.toString(sldBright.getValue()));
             }
         });
         sldB.addOnChangeListener(new Slider.OnChangeListener() {
             @Override
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 txtReview.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                txtShow.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                runRGB(Float.toString(sldR.getValue()),Float.toString(sldB.getValue()),Float.toString(sldG.getValue()),Float.toString(sldBright.getValue()));
             }
         });
         sldG.addOnChangeListener(new Slider.OnChangeListener() {
             @Override
             public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
                 txtReview.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                txtShow.setBackgroundColor(Color.rgb((int)sldR.getValue(), (int)sldG.getValue(), (int)sldB.getValue()));
+                runRGB(Float.toString(sldR.getValue()),Float.toString(sldB.getValue()),Float.toString(sldG.getValue()),Float.toString(sldBright.getValue()));
             }
         });
 
